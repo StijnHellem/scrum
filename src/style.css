@@ -13,3 +13,27 @@ html {
   box-sizing: inherit;
 }
 /* stylelint-origin */
+
+
+.high-h{
+  background:linear-gradient(120deg,#0076ff,#00ff8f,#00d0f2,#00ff8f,#0076ff);
+  background-size:400%;
+}
+
+.highlight{
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+  -webkit-animation:movingGradient 7s ease infinite;
+  animation:movingGradient 7s ease infinite;
+  position:relative;
+}
+body{
+    font-size: 10rem;
+    text-align: center;
+}
+@-webkit-keyframes movingGradient{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+  }
